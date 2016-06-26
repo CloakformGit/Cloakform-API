@@ -15,7 +15,7 @@ try {
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, "https://www.cloakform.com/api/?v=2.1");
 	curl_setopt($ch, CURLOPT_HEADER, false);
-	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,3);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,5);
 	curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY );
 	curl_setopt($ch, CURLOPT_USERPWD, "$api_secret_key:$api_public_key");   
 	curl_setopt($ch, CURLOPT_POST,count($request));
