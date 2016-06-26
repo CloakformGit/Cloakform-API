@@ -29,7 +29,8 @@ if($Cloakform_result->{'error_message'} == '') {
     
     // iterate through the entries
     foreach($entry['entries'] as $key => $entry_data) {
-	 echo $customer['name']; 
+	 echo $entry_data['question']; 
+	 echo $entry_data['answer'];
 	}
 	
     */
